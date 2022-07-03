@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    min-height: 100vh;
+    background: linear-gradient(to right top, #ff9acb,#6cdceb99);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+/* glass design*/
+.glass1, .glass2{
+    margin: 15px;
+    background: white;
+    min-height: 60vh;
+    width: 290px;
+    background: linear-gradient(to right top,rgba(255,255,255,0.3),rgba(255,255,255,0.3));
+    border-radius: 2rem;
+    z-index: 5;
+    backdrop-filter: blur(2rem);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+/* end glass design*/
+/*circles*/
+.circle1,.circle2,.circle3,.circle4,.circle5{
+    background: white;
+    background: linear-gradient(to right top,rgba(255,255,255,0.1),rgba(255,255,255,0.5));
+    height: 10rem;
+    width: 10rem;
+    position: absolute;
+    z-index: 2;
+    border-radius: 50%;
+
+}
+.circle1{
+    top :3%;
+    right:5%;
+    height: 6rem;
+    width: 6rem;
+}
+.circle2{
+    bottom :4%;
+
+    left:10%;
+}
+.circle3{
+    background: linear-gradient(to right top,#ff9acb,#6cdceb99);
+    top:2%;
+    right: 50%;
+
+}
+.circle4{
+    background: linear-gradient(to right top,#ff9acb,#6cdceb99);
+    height: 6rem;
+    width: 6rem;
+    bottom: 50%;
+    right: 45%;
+
+}
+.circle5{
+    background: linear-gradient(to right top,#ff9acb,#6cdceb99);
+    bottom: 5%;
+    right: 23%;
+}
+.op-ic{
+    position: absolute;
+    right: 12%;
+    top: 3%;
+    margin-bottom: 5px;
+    color: rgba(11, 12, 12, 0.1);
+}
+/*end of circles*/
+.content{
+    margin-top: 50px;
+    padding: 6px 6px 6px 6px;
+}
+/*form*/
+.form{
+    margin-top: 20px;
+    
+}
+.form .input{
+    margin-top: 5px;
+    padding: 4px 4px 4px 4px;
+    background: linear-gradient(to right top,rgba(255,255,255,0.1),rgba(255,255,255,0.1));
+    height: 20px;
+    border: 0px;
+    border-radius: 3px;
+    backdrop-filter: blur(2rem);
+}
+.form .sub{
+    position: absolute;
+    bottom: 7%;
+    left: 35%;
+    width: 100px;
+    padding: 10px 10px 10px 10px;
+    background: linear-gradient(to right top,rgb(255, 154, 203,0.4),rgba(107, 220, 235, 0.4));
+    height: 40px;
+    border: 0px;
+    border-radius: 10px;
+}
+/*end form*/
+@media (max-width:9px) {
+
+    .glass1,.glass2{
+    
+        width: 150px;
+    }
+    .circle2{
+        bottom: 15%;
+        left: 0;
+    }
+
+    .circle3{
+        top: 10%;
+        right: 45%;
+    }
+    .circle5{
+        bottom: 18%;
+        right: 25%;
+        width: 8rem;
+        height: 8rem;
+    }
+    .form{
+        width: 130px;
+    }
+    .form .input{
+        width: 130px;
+    }
+    .form .sub{
+        left: 30%;
+        bottom: 3%;
+        width: 75px;
+    }
+}
